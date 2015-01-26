@@ -8,7 +8,7 @@ public class PalindromeCheckerTest {
 
     @Before
     public void setUp() {
-        checker = new PalindromeChecker();        
+        checker = new PalindromeChecker();
     }
     
     @Test
@@ -19,6 +19,11 @@ public class PalindromeCheckerTest {
     @Test
     public void testIsPoopAPalindrome() {
         Assert.assertTrue(checker.isPalindrome("poop"));
+    }
+    
+    @Test
+    public void testIsPoiopAPalindrome() {
+        Assert.assertTrue(checker.isPalindrome("poiop"));
     }
     
     @Test
