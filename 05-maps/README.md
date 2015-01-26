@@ -18,3 +18,5 @@
 Hints
 -----
 * Find a way to format strings (look in String class).
+* Collections has a sort method
+* Look at Comparator interface
