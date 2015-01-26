@@ -31,8 +31,8 @@ public class StringReversalAnswer {
         
         if (input.length() > 0) {
             final String[] parts = input.split("");
-            for (int i = parts.length - 1; i >= 0; i--) {
-                output += parts[i];
+            for (final String part : parts) {
+                output = part + output;
             }
             
             return output;
