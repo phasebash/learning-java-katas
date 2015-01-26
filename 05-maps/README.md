@@ -14,3 +14,7 @@
 | Stephen | 30  |
 | Aaron   | 23  |
 | Matt    | 18  |
+
+Hints
+-----
+* Find a way to format strings (look in String class).
