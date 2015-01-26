@@ -16,7 +16,7 @@ public class StringReversalAnswer {
     }
     
     private static String reverse(final List<String> input) {
-        String output = "";
+        String output;
         
         if (!input.isEmpty()) {
             output = input.remove(0);

@@ -1,6 +1,6 @@
 public class Palindrome {
    
-    private static final PalindromeChecker PALINDROME_CHECKER = new PalindromeChecker();
+    private static final PalindromeCheckerAnswer PALINDROME_CHECKER = new PalindromeCheckerAnswer();
     
     public static void main(String[] args) {
         final String joined = String.join(" ", args);
