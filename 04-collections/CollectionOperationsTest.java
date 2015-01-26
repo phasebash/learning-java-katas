@@ -55,15 +55,15 @@ public class CollectionOperationsTest {
     
     @Test
     public void testDifference() {
-        Collection<Integer> actual = operations.intersection(ONE, TWO);
-        Set<Integer> expected = asSet(1, 2, 5, 6);
+        Collection<Integer> actual = operations.difference(ONE, TWO);
+        Set<Integer> expected = asSet(1, 2);
 
         Assert.assertTrue(expected.equals(actual));
     }
 
     @Test
     public void testDifferenceWithEmpty() {
-        Collection<Integer> actual = operations.intersection(TWO, FOUR);
+        Collection<Integer> actual = operations.difference(TWO, FOUR);
         Set<Integer> expected = asSet(3, 4, 5, 6);
 
         Assert.assertTrue(expected.equals(actual));
