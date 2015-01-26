@@ -6,13 +6,13 @@ import java.util.*;
 
 public class CollectionOperationsTest {
 
-    private static final Collection<Integer> ONE = Arrays.asList(1, 2, 3, 4);
+    private static final Collection<Integer> ONE = Collections.unmodifiableList(Arrays.asList(1, 2, 3, 4));
     
-    private static final Collection<Integer> TWO = new HashSet<>(Arrays.asList(3, 4, 5, 6));
+    private static final Collection<Integer> TWO = Collections.unmodifiableSet(new HashSet<>(Arrays.asList(3, 4, 5, 6)));
 
-    private static final Collection<Integer> THREE = new LinkedList<>(Arrays.asList(6, 7, 8));
+    private static final Collection<Integer> THREE = Collections.unmodifiableList(new LinkedList<>(Arrays.asList(6, 7, 8)));
     
-    private static final Collection<Integer> FOUR = Arrays.asList();
+    private static final Collection<Integer> FOUR = Collections.unmodifiableList(Arrays.asList());
     
     private CollectionOperations operations;
 
