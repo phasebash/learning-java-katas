@@ -16,4 +16,8 @@ public class CollectionOperations {
         return Collections.emptySet();
     }
     
+    public <T> Set<T> exclusiveOr(Collection<T> one, Collection<T> two) {
+        return Collections.emptySet();
+    }
+    
 }

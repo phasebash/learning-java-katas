@@ -27,4 +27,16 @@ public class CollectionOperationsAnswers {
         return output;
     }
     
+    public <T> Set<T> exclusiveOr(Collection<T> one, Collection<T> two) {
+        Set<T> outputL = new HashSet<>(one);
+        Set<T> outputR = new HashSet<>(two);
+        
+        outputL.removeAll(two);
+        outputR.removeAll(one);
+        
+        outputL.addAll(outputR);
+        
+        return outputL;
+    }
+    
 }

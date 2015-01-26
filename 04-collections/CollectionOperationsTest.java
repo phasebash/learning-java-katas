@@ -69,6 +69,14 @@ public class CollectionOperationsTest {
         Assert.assertTrue(expected.equals(actual));
     }
 
+    @Test
+    public void testXor() {
+        Collection<Integer> actual = operations.exclusiveOr(ONE, TWO);
+        Set<Integer> expected = asSet(1, 2, 5, 6);
+
+        Assert.assertTrue(expected.equals(actual));
+    }
+
     private Set<Integer> asSet(Integer... value) {
         return new HashSet<>(Arrays.asList(value));
     }
