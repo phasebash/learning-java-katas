@@ -10,3 +10,4 @@ information.
 * The constructor should assert that name and age are non-null and non-empty.
 * Use Intellij to generate a hashCode and equals methods
 * Copy your solution from 05 and replace the use of Maps with the new Bean
+* Use the Stream API for Filter.
