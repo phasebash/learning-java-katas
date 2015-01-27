@@ -2,7 +2,7 @@
 =============
 This lab is an extension of the previous.  Instead of using a Map to represent a person, create a Java Bean to hold this
 information.  
-* Name the class Person
+* Name the class ChillDude.
 * The bean should have two private final fields, `name`, and `age`.  
 * `name` should be a String
 * `age` should be an Integer. 
